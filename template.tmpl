@@ -1,0 +1,6 @@
+/// <reference path="<%= reference %>" />
+
+interface ITemplateStore {
+    get(name: "<%= templateGetKey %>" ): MustacheTS.Template<<%= contextType %>>;
+}
+window["<%= templatePrefixedKey %>"] = <%= compiled %>;
